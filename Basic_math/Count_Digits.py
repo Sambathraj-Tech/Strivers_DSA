@@ -1,13 +1,12 @@
-def count_digits(n):# 12345
-    
+def count_digits(n):
     count = 0
-    
-    while n > 0:
-        
-        last_digit = n % 10 #12345 % 10 = 5  in this pgm this line is not used but i wrote for understanding
-        n = n // 10 #12345 // 10 = 1234
-        count = count + 1
+    while n != 0:
+        count += 1 # every time the loop executes the count is increased
+        n = n // 10  # floor division avoids float values
     print(count)
-    
-n = int(input("Enter the digits to be counted: "))
-count_digits(n)
+count_digits(int(input("Enter the numbers to be counted: ")))# 12345
+
+
+output: 
+Enter the numbers to be counted: 12345
+5
