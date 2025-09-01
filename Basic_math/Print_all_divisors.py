@@ -1,6 +1,5 @@
-def divisors(n):
-    for i in range(1,n+1):
-        if n % i == 0:
+def print_divisors(divisor: int):
+    for i in range(1, divisor+1):
+        if divisor % i == 0:          # always put divisor 1st then divided value which is i
             print(i, end=" ")
-n = int(input("Enter the Number: "))
-divisors(n)
+print_divisors("Enter the Divisor: ")
