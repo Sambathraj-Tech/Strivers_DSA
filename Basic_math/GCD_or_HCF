@@ -1,0 +1,18 @@
+a = 36
+b = 48
+
+# Check the two numbers is greater then 0 and proceed
+while (a > 0) and (b > 0): 
+    # If A is greater ,then (do % with B) because greatest number is placed before %.
+    if (a > b):
+        # After modulo the answer will put it in the A
+        a = a % b
+    else :
+        b = b % a  
+# If a or b becomes 0 print() the next value of 0   
+if a == 0:
+    print(b)
+else: 
+    print(a)
+
+Time Complexity : O(log   (min(a,b)))  -->log  : its always comes when Division is used or %
