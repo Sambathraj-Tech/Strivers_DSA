@@ -1,4 +1,4 @@
-wo Pointer pattern:
+Two Pointer pattern:
 
 1. Master the Core Variations
 Understand the three main types:
