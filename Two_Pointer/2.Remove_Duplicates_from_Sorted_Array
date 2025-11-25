@@ -1,0 +1,17 @@
+class Solution(object):
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        left = 0
+        n = len(nums) # 8
+        for right in range(1, n): # 1, 7
+            if nums[left] != nums[right]:
+                left += 1
+                nums[left] = nums[right]
+        return left + 1
+
+  Complexity:
+  Time complexity : O(n)
+  Space Complexity : O(1)
